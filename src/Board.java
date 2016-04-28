@@ -4,9 +4,10 @@ public class Board {
 
     char[][] board = new char[3][3];
     char currentPlayer;
-    int count = 0;
+    int count;
 
     public Board() {
+        count = 0;
         for (int i = 0; i < 3; i++) {
             Arrays.fill(board[i], '_');
         }
